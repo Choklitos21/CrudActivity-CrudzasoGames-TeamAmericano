@@ -9,7 +9,7 @@ Este documento explica el flujo de trabajo que seguiremos para colaborar en gith
 Cada uno debe clonar el proyecto en su equipo:
 
 ```bash
-git clone https://github.com/Zain-wave/Crudzaso_Games
+git clone https://github.com/Choklitos21/CrudActivity-CrudzasoGames-TeamAmericano.git
 ```
 
 ### ⚙️ Configuren su identidad en Git de ser necesario(solo una vez)
