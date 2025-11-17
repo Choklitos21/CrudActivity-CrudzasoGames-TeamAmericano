@@ -29,11 +29,13 @@ def jugarTrivia():
 
     gameRunning = True
     while gameRunning:
-        for i in range(1,3):
+        numbers = range(4)
+        randomNumbers = random.sample(numbers, 4)
+        print(randomNumbers)
+        for i in range(0,2):
             flag = True
-            randomOption = random.randint(0, 3)
             while flag:
-                currentQuestion = questions[int(count)]["preguntas"][randomOption]
+                currentQuestion = questions[int(count)]["preguntas"][randomNumbers[i]]
 
                 #Borrar luego de hacer pruebas
                 print("here",currentQuestion)
@@ -65,9 +67,13 @@ def jugarTrivia():
                     flag = False
 
                 if lives == 0:
-                    break
+                    gameRunning = False
+                    flag = False
 
                 time.sleep(1.5)
+
+            if lives == 0:
+                break
 
         if lives == 0:
             print("You dont have more lives, good luck next time")

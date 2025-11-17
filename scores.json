@@ -2,7 +2,7 @@
     {
         "name": "Choklitos",
         "score": {
-            "time": -15.231959819793701,
+            "time": -17.452937364578247,
             "lives": -1,
             "correct": 0,
             "incorrect": 4
@@ -11,46 +11,19 @@
     {
         "name": "Choklitos",
         "score": {
-            "time": -42.70733094215393,
-            "lives": -1,
-            "correct": 2,
-            "incorrect": 4
-        }
-    },
-    {
-        "name": "Choklitos",
-        "score": {
-            "time": -18.670819997787476,
-            "lives": 0,
-            "correct": 1,
-            "incorrect": 3
-        }
-    },
-    {
-        "name": "Choklitos",
-        "score": {
-            "time": -39.27261662483215,
-            "lives": -3,
-            "correct": 4,
-            "incorrect": 6
-        }
-    },
-    {
-        "name": "Choklitos",
-        "score": {
-            "time": -19.25116276741028,
-            "lives": 0,
-            "correct": 3,
-            "incorrect": 3
-        }
-    },
-    {
-        "name": "Choklitos",
-        "score": {
-            "time": -34.17049551010132,
+            "time": -43.81306481361389,
             "lives": 3,
             "correct": 10,
             "incorrect": 0
+        }
+    },
+    {
+        "name": "Choklitos",
+        "score": {
+            "time": -12.712459325790405,
+            "lives": 0,
+            "correct": 0,
+            "incorrect": 3
         }
     }
 ]
