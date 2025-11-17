@@ -65,8 +65,6 @@ while registro_clave:
     registro_clave = False
 
 
-
-
 nuevo_usuario = {
     "usuario": usuario_ingresado,
     "clave": clave_ingresada,
