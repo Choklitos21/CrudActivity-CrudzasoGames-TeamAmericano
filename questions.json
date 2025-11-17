@@ -3,7 +3,7 @@
         "category": "science",
         "questions": [
             {
-                "question": "\u00bfCual es el s\u00edmbolo de PLATA en la tabla peri\u00f3dica?",
+                "question": "What is the symbol for SILVER on the periodic table?",
                 "answer": "b",
                 "options": [
                     "P",
@@ -13,17 +13,17 @@
                 ]
             },
             {
-                "question": "\u00bfA qu\u00e9 grupo de animales pertenecen las ranas?",
+                "question": "What group of animals do frogs belong to?",
                 "answer": "c",
                 "options": [
                     "Reptiles",
-                    "Mamiferos",
-                    "Anfibios",
-                    "Oviparos"
+                    "Mammals",
+                    "Amphibians",
+                    "Oviparous "
                 ]
             },
             {
-                "question": "Cual es el tipo de sangre mas raro?",
+                "question": "What is the rarest blood type?",
                 "answer": "a",
                 "options": [
                     "AB-",
@@ -33,7 +33,7 @@
                 ]
             },
             {
-                "question": "\u00bfCu\u00e1ntos huesos tiene el cuerpo humano en adultos?",
+                "question": "How many bones are there in the adult human body?",
                 "answer": "c",
                 "options": [
                     "216",
@@ -58,43 +58,43 @@
         "category": "art",
         "questions": [
             {
-                "question": "\u00bfEn que museo esta la mona lisa?",
+                "question": "In which museum is the Mona Lisa?",
                 "answer": "b",
                 "options": [
-                    "Museo del prado",
+                    "Prado Museum",
                     "Louvre",
                     "MoMa",
                     "Uffizi"
                 ]
             },
             {
-                "question": "\u00bfQu\u00e9 t\u00e9cnica art\u00edstica usa pigmento diluido en agua sobre yeso h\u00famedo?",
+                "question": "What artistic technique uses pigment diluted in water on wet plaster?",
                 "answer": "b",
                 "options": [
-                    "\u00d3leo",
+                    "Oil",
                     "Fresco",
-                    "Acuarela",
+                    "Watercolor",
                     "Temple"
                 ]
             },
             {
-                "question": "\u00bfQu\u00e9 edificio es un ejemplo del estilo g\u00f3tico?",
+                "question": "Which building is an example of the Gothic style?",
                 "answer": "a",
                 "options": [
-                    "Catedral de Notre Dame",
-                    "Coliseo Romano",
-                    "Parten\u00f3n",
-                    "\u00d3pera de S\u00eddney"
+                    "Notre Dame Cathedral",
+                    "Roman Colosseum",
+                    "Parthenon",
+                    "Sydney Opera House"
                 ]
             },
             {
-                "question": "\u00bfCual de estas esculturas es egipcia?",
+                "question": "Which of these sculptures is Egyptian?",
                 "answer": "c",
                 "options": [
-                    "El David",
-                    "El Disc\u00f3bolo",
-                    "La Esfinge de Giza",
-                    "Mo\u00e1i"
+                    "David",
+                    "The Discobolus",
+                    "The Sphinx of Giza",
+                    "Moai"
                 ]
             }
         ]
@@ -103,7 +103,7 @@
         "category": "music",
         "questions": [
             {
-                "question": "\u00bfQuien es conocido como 'REY DEL POP'?",
+                "question": "Who is known as the “KING OF POP”?",
                 "answer": "b",
                 "options": [
                     "Elvis Presley",
@@ -113,7 +113,7 @@
                 ]
             },
             {
-                "question": "\u00bfCual es el genero musical generado en Jamaica?",
+                "question": "What is the musical genre that originated in Jamaica?",
                 "answer": "a",
                 "options": [
                     "Reggae",
@@ -123,7 +123,7 @@
                 ]
             },
             {
-                "question": "\u00bfQuien compuso la Novena Sinfon\u00eda?",
+                "question": "Who composed the Ninth Symphony?",
                 "answer": "c",
                 "options": [
                     "Mozart",
@@ -133,13 +133,13 @@
                 ]
             },
             {
-                "question": "\u00bfCual de estos instrumentos pertenece a la familia de cuerdas",
+                "question": "Which of these instruments belongs to the string family?",
                 "answer": "c",
                 "options": [
-                    "Flauta",
+                    "Flute",
                     "Piano",
                     "Violin",
-                    "Trompeta"
+                    "Trumpet"
                 ]
             }
         ]
@@ -148,27 +148,27 @@
         "category": "geography",
         "questions": [
             {
-                "question": "Cual es el rio mas largo del mundo?",
+                "question": "What is the longest river in the world?",
                 "answer": "a",
                 "options": [
-                    "Amazonas",
-                    "Nilo",
-                    "\u00c1frica",
+                    "Amazon",
+                    "Nile",
+                    "Africa",
                     "Oceania"
                 ]
             },
             {
-                "question": "\u00bfEn que continente queda Mongolia?",
+                "question": "On which continent is Mongolia located?",
                 "answer": "b",
                 "options": [
-                    "Europa",
+                    "Europe",
                     "Asia",
-                    "\u00c1frica",
-                    "Ocean\u00eda"
+                    "Africa",
+                    "Oceania"
                 ]
             },
             {
-                "question": "\u00bfCual es la capital de Australia?",
+                "question": "What is the capital of Australia?",
                 "answer": "b",
                 "options": [
                     "Sidney",
@@ -178,7 +178,7 @@
                 ]
             },
             {
-                "question": "\u00bfCual de estos paises NO tiene salida al mar?",
+                "question": "Which of these countries does NOT have access to the sea?",
                 "answer": "a",
                 "options": [
                     "Bolivia",
@@ -193,17 +193,17 @@
         "category": "sports",
         "questions": [
             {
-                "question": "\u00bfQue selecci\u00f3n ha ganado mas Copas del Mundo de f\u00fatbol?",
+                "question": "Which team has won the most World Cups?",
                 "answer": "d",
                 "options": [
-                    "Alemania",
-                    "Italia",
+                    "Germany",
+                    "Italy",
                     "Argentina",
-                    "Brasil"
+                    "Brazil"
                 ]
             },
             {
-                "question": "\u00bfCuantos jugadores hay en cancha por equipo en baloncesto?",
+                "question": "How many players are there on the court per team in basketball?",
                 "answer": "b",
                 "options": [
                     "4",
@@ -213,23 +213,23 @@
                 ]
             },
             {
-                "question": "\u00bfQui\u00e9n es el maximo goleador hist\u00f3rico del futbol?",
+                "question": "Who is the all-time leading scorer in soccer?",
                 "answer": "b",
                 "options": [
-                    "Pel\u00e9",
-                    "Cristano Ronaldo",
+                    "Pelé",
+                    "Cristiano Ronaldo",
                     "Lionel Messi",
                     "Ali Daei"
                 ]
             },
             {
-                "question": "\u00bfEn qu\u00e9 pa\u00eds originaron los juegos Ol\u00edmpicos antiguos?",
+                "question": "In which country did the ancient Olympic Games originate?",
                 "answer": "c",
                 "options": [
-                    "Italia",
-                    "Egipto",
-                    "Grecia",
-                    "Turqu\u00eda"
+                    "Italy",
+                    "Egypt",
+                    "Greece",
+                    "Turkey"
                 ]
             }
         ]
@@ -238,43 +238,43 @@
         "category": "history",
         "questions": [
             {
-                "question": "\u00bfQui\u00e9n fue el primer empeador de Roma?",
+                "question": "Who was the first emperor of Rome?",
                 "answer": "b",
                 "options": [
-                    "Julio C\u00e9sar",
-                    "Augusto",
-                    "Ner\u00f3n",
-                    "Trajano"
+                    "Julius Caesar",
+                    "Augustus",
+                    "Nero",
+                    "Trajan"
                 ]
             },
             {
-                "question": "\u00bfEn que pa\u00eds comenz\u00f3 la Revolucion Industrial?",
+                "question": "In which country did the Industrial Revolution begin?",
                 "answer": "d",
                 "options": [
-                    "Francia",
-                    "Alemania",
-                    "Estados Unidos",
-                    "Reino Unido"
+                    "France",
+                    "Germany",
+                    "United States",
+                    "United Kingdom"
                 ]
             },
             {
-                "question": "Cual fue el detonante de la Primera Guerra Mundial?",
+                "question": "What triggered World War I?",
                 "answer": "b",
                 "options": [
-                    "La invasion a Polonia",
-                    "El asesinato del archiduque Francisco Fernando",
-                    "El hundimiento del Lusitania",
-                    "La crisis de los Balcanes"
+                    "The invasion of Poland",
+                    "The assassination of Archduke Franz Ferdinand",
+                    "The sinking of the Lusitania",
+                    "The Balkan crisis"
                 ]
             },
             {
-                "question": "\u00bfQuien fue el fundador del Imperio Mongol?",
+                "question": "Who was the founder of the Mongol Empire?",
                 "answer": "c",
                 "options": [
                     "Kublai Kan",
-                    "Atila",
-                    "Gengis Kan",
-                    "Tamerl\u00e1n"
+                    "Attila",
+                    "Genghis Khan",
+                    "Tamerlane"
                 ]
             }
         ]
