@@ -1,0 +1,206 @@
+[
+    {
+        "categoria": "Ciencia",
+        "preguntas": [
+            {
+                "pregunta": "¿Cual es el símbolo de PLATA en la tabla periódica?",
+                "respuesta": "b",
+                "opciones":[
+                    "P", "Ag", "B", "As"
+                ]
+            },
+            {
+                "pregunta": "¿A qué grupo de animales pertenecen las ranas?",
+                "respuesta": "c",
+                "opciones":[
+                    "Reptiles", "Mamiferos", "Anfibios", "Oviparos"
+                ]
+            },
+            {
+                "pregunta": "Cual es el tipo de sangre mas raro?",
+                "respuesta": "a",
+                "opciones":[
+                    "AB-", "O+", "AB+", "A+"
+                ]
+            },
+            {
+                "pregunta": "¿Cuántos huesos tiene el cuerpo humano en adultos?",
+                "respuesta": "c",
+                "opciones":[
+                    "216", "202", "206", "230"
+                ]
+            }
+
+        ]
+    },
+    {
+        "categoria": "Arte",
+        "preguntas": [
+            {
+                "pregunta": "¿En que museo esta la mona lisa?",
+                "respuesta": "b",
+                "opciones": [
+                    "Museo del prado", "Louvre", "MoMa", "Uffizi"
+                ]
+            },
+            {
+                "pregunta": "¿Qué técnica artística usa pigmento diluido en agua sobre yeso húmedo?",
+                "respuesta": "b",
+                "opciones": [
+                    "Óleo", "Fresco", "Acuarela", "Temple"
+                ]
+            },
+            {
+                "pregunta": "¿Qué edificio es un ejemplo del estilo gótico?",
+                "respuesta": "a",
+                "opciones": [
+                    "Catedral de Notre Dame", "Coliseo Romano", "Partenón", "Ópera de Sídney"
+                ]
+            },
+            {
+                "pregunta": "¿Cual de estas esculturas es egipcia?",
+                "respuesta": "c",
+                "opciones": [
+                    "El David", "El Discóbolo", "La Esfinge de Giza", "Moái"
+                ]
+            }
+
+        ]
+    },
+    {
+        "categoria": "Musica",
+        "preguntas": [
+            {
+                "pregunta": "¿Quien es conocido como 'REY DEL POP'?",
+                "respuesta": "b",
+                "opciones": [
+                    "Elvis Presley", "Michael Jackson", "Prince", "Bruno Mars"
+                ]
+            },
+            {
+                "pregunta": "¿Cual es el genero musical generado en Jamaica?",
+                "respuesta": "a",
+                "opciones": [
+                    "Reggae", "Blues", "Salsa", "Jazz"
+                ]
+            },
+            {
+                "pregunta": "¿Quien compuso la Novena Sinfonía?",
+                "respuesta": "c",
+                "opciones": [
+                    "Mozart", "Bach", "Beethoven", "Chopin"
+                ]
+            },
+            {
+                "pregunta": "¿Cual de estos instrumentos pertenece a la familia de cuerdas",
+                "respuesta": "c",
+                "opciones": [
+                    "Flauta", "Piano", "Violin", "Trompeta"
+                ]
+            }
+
+        ]
+    },
+    {
+        "categoria": "Geografía",
+        "preguntas": [
+            {
+                "pregunta": "Cual es el rio mas largo del mundo?",
+                "respuesta": "a",
+                "opciones": [
+                    "Amazonas", "Nilo", "África", "Oceania"
+                ]
+            },
+            {
+                "pregunta": "¿En que continente queda Mongolia?",
+                "respuesta": "b",
+                "opciones": [
+                    "Europa", "Asia", "África", "Oceanía"
+                ]
+            },
+            {
+                "pregunta": "¿Cual es la capital de Australia?",
+                "respuesta": "b",
+                "opciones": [
+                    "Sidney", "Canberra", "Melbourne", "Perth"
+                ]
+            },
+            {
+                "pregunta": "¿Cual de estos paises NO tiene salida al mar?",
+                "respuesta": "a",
+                "opciones": [
+                    "Bolivia", "Venezuela", "Paraguay", "Mongolia"
+                ]
+            }
+
+        ]
+    },
+    {
+        "categoria": "Deportes",
+        "preguntas": [
+            {
+                "pregunta": "¿Que selección ha ganado mas Copas del Mundo de fútbol?",
+                "respuesta": "d",
+                "opciones": [
+                    "Alemania", "Italia", "Argentina", "Brasil"
+                ]
+            },
+            {
+                "pregunta": "¿Cuantos jugadores hay en cancha por equipo en baloncesto?",
+                "respuesta": "b",
+                "opciones": [
+                    "4", "5", "6", "7"
+                ]
+            },
+            {
+                "pregunta": "¿Quién es el maximo goleador histórico del futbol?",
+                "respuesta": "b",
+                "opciones": [
+                    "Pelé", "Cristano Ronaldo", "Lionel Messi", "Ali Daei"
+                ]
+            },
+            {
+                "pregunta": "¿En qué país originaron los juegos Olímpicos antiguos?",
+                "respuesta": "c",
+                "opciones": [
+                    "Italia", "Egipto", "Grecia", "Turquía"
+                ]
+            }
+
+        ]
+    },
+    {
+        "categoria": "Historia",
+        "preguntas": [
+            {
+                "pregunta": "¿Quién fue el primer empeador de Roma?",
+                "respuesta": "b",
+                "opciones": [
+                    "Julio César", "Augusto", "Nerón", "Trajano"
+                ]
+            },
+            {
+                "pregunta": "¿En que país comenzó la Revolucion Industrial?",
+                "respuesta": "d",
+                "opciones": [
+                    "Francia", "Alemania", "Estados Unidos", "Reino Unido"
+                ]
+            },
+            {
+                "pregunta": "Cual fue el detonante de la Primera Guerra Mundial?",
+                "respuesta": "b",
+                "opciones": [
+                    "La invasion a Polonia", "El asesinato del archiduque Francisco Fernando", "El hundimiento del Lusitania", "La crisis de los Balcanes"
+                ]
+            },
+            {
+                "pregunta": "¿Quien fue el fundador del Imperio Mongol?",
+                "respuesta": "c",
+                "opciones": [
+                    "Kublai Kan", "Atila", "Gengis Kan", "Tamerlán"
+                ]
+            }
+
+        ]
+    }
+]

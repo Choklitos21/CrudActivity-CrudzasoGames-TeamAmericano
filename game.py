@@ -1,7 +1,11 @@
-from questions import *
+import json
+
 import random, time
 import os
 import platform
+
+with open("questions.json", "r", encoding='utf-8') as j:
+    questions = json.load(j)
 
 user = {
     "nombre": "Choklitos",
@@ -27,9 +31,13 @@ def jugarTrivia():
     while gameRunning:
         
         for i in range(1,3):
-            currentQuestion = preguntas[count]["preguntas"][random.randint(0,3)]
+            currentQuestion = questions[int(count)]["preguntas"][random.randint(0, 3)]
+
+            #Borrar luego de hacer pruebas
+            print("here",currentQuestion)
+
             print(f"""
-            CATEGORIA: {preguntas[count]["categoria"]}a
+            CATEGORIA: {questions[int(count)]["categoria"]}
             Current lives: {lives}{" *Careful, it's your last life*" if lives == 1 else ""}
             This is your question
             {currentQuestion["pregunta"]}
@@ -43,27 +51,23 @@ def jugarTrivia():
             if not answer.isalpha():
                 print("Option not valid, try again")
                 continue
-            elif answer == currentQuestion["respuesta"]:
+            elif answer == currentQuestion["respuesta"] and count < 3:
                 print("!CORRECT¡\nNICE DONE\nCan you keep it up?")
                 correctAnswers += 1
-            else:
+            elif answer != currentQuestion["respuesta"] and count < 3:
                 print("INCORRECT\ntry better next time ;)")
                 incorrectAnswers += 1
                 lives -= 1
 
-            time.sleep(2)
-            print(os.name)
-            if os.name == "Windows":
-                os.system('cls')
-            else:
-                os.system('clear')
-
+            time.sleep(1.5)
+            os.system('cls' if os.name == 'nt' else 'clear')
 
         if lives <= 0:
             print("You dont have more lives, good luck next time")
             gameRunning = False
         count += 1
         if count > 4:
+            print("GAME OVER")
             gameRunning = False
 
     totalTime = startTime - time.time()
