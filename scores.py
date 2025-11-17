@@ -12,7 +12,7 @@ scoreTest = {
 
 def saveScore(score):
     if os.path.getsize("scores.json") == 0:
-        data = []  # Asigna un diccionario vacío
+        data = []
     else:
         with open("scores.json", 'r') as old_json:
             data = json.load(old_json)
