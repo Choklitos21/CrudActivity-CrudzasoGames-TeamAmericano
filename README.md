@@ -38,16 +38,34 @@ py main.py
 
 + ### "os" Library
 The "os" library in Python acts as an interface to the underlying operating system, allowing you to perform file system 
-operations like creating/deleting folders (os.mkdir()), manipulating file paths (os.path), and accessing environment variables, making it essential for system-level interaction
+operations like creating/deleting folders (os.mkdir()), manipulating file paths (os.path), and accessing environment 
+variables, making it essential for system-level interaction
 ```py
 import os
 ```
 
 + ### "json" Library
 The "json" library serves as a translator for the universally accepted JSON (JavaScript Object Notation) data format, 
-enabling serialization (converting Python objects like dictionaries into JSON strings via json.dumps()) and deserialization (converting JSON strings back into Python objects via json.loads()), which is critical for data exchange over the web and saving structured data
+enabling serialization (converting Python objects like dictionaries into JSON strings via json.dumps()) and 
+deserialization (converting JSON strings back into Python objects via json.loads()), which is critical for data exchange over the web and saving structured data
 ```py
 import json
+```
+
++ ### "random" Library
+The random library is used to generate pseudo-random numbers for various purposes like simulations, games, and security,
+providing functions to select items randomly (random.choice), shuffle lists (random.shuffle), and generate random 
+integers within a range (random.randint)
+```py
+import random
+```
+
++ ### "time" Library
+The time library provides tools for measuring and manipulating time, offering functions to retrieve the current time as 
+seconds since the epoch (time.time()), pause program execution for a specified duration (time.sleep()), and convert 
+time representations between floating-point seconds and structured time formats.
+```py
+import time
 ```
 
 ---

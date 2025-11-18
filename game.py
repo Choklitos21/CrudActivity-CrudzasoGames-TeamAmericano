@@ -1,8 +1,7 @@
 import json
-from scores import *
+from scores import saveScoreMenu
 import random, time
 import os
-import platform
 
 if os.path.getsize("questions.json") == 0:
     data = []
