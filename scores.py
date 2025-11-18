@@ -24,3 +24,27 @@ def saveScoreMenu(score):
             flag = False
         else:
             print("Option not valid, try again")
+
+def showScores():
+    if os.path.getsize("scores.json") == 0:
+        data = []
+    else:
+        with open("scores.json", 'r') as old_json:
+            data = json.load(old_json)
+
+    if not data:
+        print("No scores saved yet")
+        return
+    else:
+        print("SCORES")
+        count = 1
+        for i in data:
+            for j in data:
+                if i["score"]["time"] > j["score"]["time"]:
+                    print(f"""
+                    #{count} {i["name"]}
+                    Lives: {i["score"]["lives"]}
+                    Time: {(i["score"]["time"] / 60):.2f}:{i["score"]["time"]:.2f}
+                    Correct: {i["score"]["correct"]} / Incorrect: {i["score"]["incorrect"]}
+                    """)
+                    count += 1

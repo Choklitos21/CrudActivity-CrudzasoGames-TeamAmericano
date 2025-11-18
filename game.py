@@ -4,20 +4,23 @@ import random, time
 import os
 import platform
 
-with open("questions.json", "r", encoding='utf-8') as json_file:
-    questions = json.load(json_file)
+if os.path.getsize("questions.json") == 0:
+    data = []
+else:
+    with open("questions.json", 'r', encoding="utf-8") as old_json:
+        questions = json.load(old_json)
 
-user = {
-    "name": "Choklitos",
-    "score": {
-        "time": 0.0,
-        "lives": 0,
-        "correct": 0,
-        "incorrect": 0
-    }
-}
+# user = {
+#     "name": "Choklitos",
+#     "score": {
+#         "time": 0.0,
+#         "lives": 0,
+#         "correct": 0,
+#         "incorrect": 0
+#     }
+# }
 
-def jugarTrivia():
+def jugarTrivia(user):
     print("WELCOME TO TRIVIA")
     activeUser = user
     count = 0
@@ -83,7 +86,7 @@ def jugarTrivia():
             print("GAME OVER")
             gameRunning = False
 
-    totalTime = startTime - time.time()
+    totalTime = time.time() - startTime
     activeUser["score"]["time"] = totalTime
     activeUser["score"]["lives"] = lives
     activeUser["score"]["correct"] = correctAnswers
@@ -92,5 +95,3 @@ def jugarTrivia():
     saveScoreMenu(activeUser)
 
     return activeUser
-
-print(jugarTrivia())

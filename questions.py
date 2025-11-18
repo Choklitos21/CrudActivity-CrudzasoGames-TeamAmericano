@@ -248,32 +248,43 @@ def listQuestions():
         with open("questions.json", 'r', encoding="utf-8") as old_json:
             oldQuestions = json.load(old_json)
 
-    print("Questions until now")
+    print("Questions until now\n")
+    index = 1
     for i in oldQuestions:
-        print(i, "\n")
+        for j in i["questions"]:
+            print(f"""
+        Questions #{index}
+        Category: {i["category"].capitalize()}
+        Question: {j["question"]}
+        Options: A. {j["options"][0]} | B. {j["options"][1]} | C. {j["options"][2]} | D. {j["options"][3]}
+        Answer: {j["answer"].capitalize()}\n
+        """)
+            index += 1
 
 def questionsMenu():
-    print("""
-    QUESTIONS MENU
-    1. List all questions until now
-    2. Create a new question
-    3. Update a current question
-    4. Remove a question
-    5. Previous menu
-    """)
+    menuQuestionsFlag = True
+    while menuQuestionsFlag:
+        print("""
+        QUESTIONS MENU
+        1. List all questions until now
+        2. Create a new question
+        3. Update a current question
+        4. Remove a question
+        5. Previous menu
+        """)
 
-    option = str(print("Select an option: "))
-    match option:
-        case "1":
-            listQuestions()
-        case "2":
-            createQuestion()
-        case "3":
-            print("list")
-        case "4":
-            print("list")
-        case "5":
-            print("list")
-        case _:
-            print("Option not valid, select between 1 to 5")
-    pass
+        option = str(input("Select an option: "))
+        match option:
+            case "1":
+                listQuestions()
+            case "2":
+                createQuestion()
+            case "3":
+                modifyQuestion()
+            case "4":
+                deleteQuestion()
+            case "5":
+                menuQuestionsFlag = False
+            case _:
+                print("Option not valid, select between 1 to 5")
+
