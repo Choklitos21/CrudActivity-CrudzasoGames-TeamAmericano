@@ -1,122 +1,65 @@
-# 🧑‍💻 Crudzaso_Games   ------   Guía de Trabajo en Equipo con GitHub
-
-Este documento explica el flujo de trabajo que seguiremos para colaborar en github
----
-
-## 📦 1. Primeros pasos
-
-### 🧭 Clonar el repositorio
-Cada uno debe clonar el proyecto en su equipo:
-
-```bash
-git clone https://github.com/Choklitos21/CrudActivity-CrudzasoGames-TeamAmericano.git
-```
-
-### ⚙️ Configuren su identidad en Git de ser necesario(solo una vez)
-```bash
-git config --global user.name "Tu Nombre"
-git config --global user.email "tu_correo@ejemplo.com"
-```
+# CrudActivity-CrudasoGames-TeamAmericano - Trivia
 
 ---
 
-## 🌿 2. Trabajaremos todos en la misma rama
+### Explanation:
+Trivia-style game project made in Python. This project shows a Trivia-style game where there are two questions per 
+category, 6 categories in total, 12 questions.
 
-Todos trabajaremos sobre la **rama principal (`main`)**.  
-Esto sirve **solo si cada uno edita archivos diferentes o módulos independientes** del proyecto.
+The categories are: Science, Art, Music, Geography, Sports and History.
 
-Verifiquen que estan en la rama correcta usando:
+Each player will answer a total of 12 questions, or until they got the wrong 3 questions, meaning that each player had 
+3 lives, each incorrect answer takes a life off.
+
+When the players end their turn, they will have the option to record the result in the system. The score will show the 
+best player by time and lives.
+
+To play each person has to complete a registration before they can play.
+Each user can play the game and also add new questions to the game
+
+---
+
+### 1. How to run the game:
+Use this code to run the game
+
++ On Linux
 ```bash
-git branch
+python3 main.py
 ```
 
-Si no estan en `main` usen:
++ On Windows
 ```bash
-git checkout main
+py main.py
 ```
 
 ---
 
-## 💾 3. Guardar y subir cambios
+## 2. External libraries
 
-Cuando terminen una parte o hagan un avancen importantes:
-
-```bash
-git add .
-git commit -m "Descripción clara del cambio realizado"
-git push origin main
++ ### "os" Library
+The "os" library in Python acts as an interface to the underlying operating system, allowing you to perform file system 
+operations like creating/deleting folders (os.mkdir()), manipulating file paths (os.path), and accessing environment variables, making it essential for system-level interaction
+```py
+import os
 ```
 
-🧠 **Ejemplo de mensajes de commit:**
-- `Agregada funcion de xxxxxxx`
-- `Mejorada función de xxxxxxx`
-- `Corregido el problema en xxxxxxx`
-
----
-
-## 🔄 4. Mantengan su repositorio local actualizado
-
-Antes de empezar a trabajar cada día:
-
-```bash
-git pull origin main
++ ### "json" Library
+The "json" library serves as a translator for the universally accepted JSON (JavaScript Object Notation) data format, 
+enabling serialization (converting Python objects like dictionaries into JSON strings via json.dumps()) and deserialization (converting JSON strings back into Python objects via json.loads()), which is critical for data exchange over the web and saving structured data
+```py
+import json
 ```
 
-Esto descarga los cambios que subieron los demas.  
-Si no hacen este paso, podrías tener algun problema al subir sus cambios.
-
 ---
 
-## ⚔️ 5. Resolver conflictos (si ocurren)/(INTENTAR NO HACER ESTO)
+## 3. Description of the information management system implemented
 
-Si dos personas modifican el mismo archivo, Git mostrará un conflicto.  
-Para solucionarlo:
+We manage information using JSON documents, where we store user information, scores, and stored questions, each in 
+separate files.
 
-1. Ejecutamos:
-   ```bash
-   git status
-   ```
-2. Abrimos los archivos marcados en conflicto.  
-   Vamos a ver secciones como:
-   ```
-   <<<<<<< HEAD
-   # Tu versión
-   =======
-   # Versión del otro
-   >>>>>>>
-   ```
-3. Eliminamos los marcadores (`<<<<<<<`, `=======`, `>>>>>>>`) y dejamos la versión correcta.
-4. Guardamos el archivo y ejecutamos:
-   ```bash
-   git add <archivo-resuelto>
-   git commit
-   ```
+## 4. Members of the project
++ Diego Alejandro Morales Montoya
++ Anderson Guzman
++ Edwin
++ Toro
 
----
-
-## 🧹 6. Buenas prácticas
-
-- **Antes de subir**, usen `git pull origin main` para traer los últimos cambios.  
-- **Eviten modificar archivos que estén siendo trabajados por los otros.**
-- **Usen mensajes de commit descriptivos.**
-
----
-
-## 🧠 7. Flujo recomendado diario
-
-1️⃣ Actualizen su código local  
-```bash
-git pull origin main
-```
-
-2️⃣ Realizen cambios en los archivos asignados  
-3️⃣ Guarden y suban su trabajo
-```bash
-git add .
-git commit -m "Mensaje descriptivo"
-git push origin main
-```
-
-4️⃣ Avisen a los otros que sus cambios ya están en GitHub ✅
-
----
