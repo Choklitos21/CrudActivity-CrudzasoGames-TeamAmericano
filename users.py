@@ -73,3 +73,8 @@ nuevo_usuario = {
 usuarios.append(nuevo_usuario)
 print("\nUsuario registrado correctamente, puede continuar.")
 
+def crearusuario ():
+return user
+
+def iniciarsesion():
+return user
