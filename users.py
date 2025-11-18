@@ -65,30 +65,45 @@ def crearusuario():
 
         clave_ingresada = int(clave_ingresada)
 
-<<<<<<< HEAD
+def iniciarsesion():
 
-        registro_clave = False
+    val = True
+    while (val):
 
+        ingrese_usuario = input("Ingrese usuario: ")
+        for nombre in data:
+            if ingrese_usuario == nombre["usuario"]:
+                print("usuario encontrado")
+                val = False
+                break
 
-    nuevo_usuario = {
-        "usuario": usuario_ingresado,
-        "clave": clave_ingresada,
-    }
+        if val:
+            print("Usuario no encontrado")
+
+    cal = 3
+    acceso = False
+    while (cal > 0):
+
+        ingrese_contraseña = int(input("Ingrese contraseña: "))
+        for clave in data:
+            if ingrese_contraseña == clave["clave"]:
+                print("Contraseña valida")
+                cal = 0
+                acceso = True
+                break
+
+        cal -=1
+
+        if cal == 0:
+            print("Contraseña incorrecta")
+            
+    if acceso:
+        return ingrese_usuario
+    
+    else:
+        print("Error, ya as intentado muchas veces")
+        return False
+    
+iniciarsesion()
 
     
-    data.append(nuevo_usuario)
-
-    with open("users.json", "w", encoding="utf-8") as new_json:
-        json.dump(data, new_json, indent=4)
-
-    print("\nUsuario registrado correctamente, puede continuar.")
-
-
-crearusuario()
-=======
-def crearusuario ():
-return user
-
-def iniciarsesion():
-return user
->>>>>>> 3d21c26965fda7e5902f1fe2219ee3cfea075d97
