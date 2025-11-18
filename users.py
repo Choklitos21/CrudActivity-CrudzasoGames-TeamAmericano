@@ -65,6 +65,7 @@ def crearusuario():
 
         clave_ingresada = int(clave_ingresada)
 
+<<<<<<< HEAD
 
         registro_clave = False
 
@@ -84,3 +85,10 @@ def crearusuario():
 
 
 crearusuario()
+=======
+def crearusuario ():
+return user
+
+def iniciarsesion():
+return user
+>>>>>>> 3d21c26965fda7e5902f1fe2219ee3cfea075d97
