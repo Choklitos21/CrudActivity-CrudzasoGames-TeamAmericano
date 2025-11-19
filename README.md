@@ -55,7 +55,7 @@ import json
 + ### "random" Library
 The random library is used to generate pseudo-random numbers for various purposes like simulations, games, and security,
 providing functions to select items randomly (random.choice), shuffle lists (random.shuffle), and generate random 
-integers within a range (random.randint)
+integers within a range (random.randint).
 ```py
 import random
 ```
@@ -77,7 +77,7 @@ separate files.
 
 ## 4. Members of the project
 + Diego Alejandro Morales Montoya
-+ Anderson Guzman
-+ Edwin
-+ Toro
++ Anderson Fabian Guzman Ochoa
++ Edwar Jamison Rios Tobon
++ Andres Felipe Toro Graciano
 
