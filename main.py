@@ -1,16 +1,7 @@
 from questions import questionsMenu
 from game import jugarTrivia
 from scores import showScores
-
-user = {
-    "name": "Choklitos",
-    "score": {
-        "time": 0.0,
-        "lives": 0,
-        "correct": 0,
-        "incorrect": 0
-    }
-}
+from users import crearusuario, iniciarsesion
 
 def loginMenu():
     menuFlag = True
@@ -25,17 +16,17 @@ def loginMenu():
         menuOption = str(input("Select an option: "))
         match menuOption:
             case "1":
-                print("Option")
-                if "option true":
-                    gameMenu("user")
+                user = iniciarsesion()
+                if user:
+                    gameMenu(user)
                 else:
-                    print("Failed to login")
+                    continue
             case "2":
-                print("Option")
-                if "option true":
-                    gameMenu("user")
+                user = crearusuario()
+                if user:
+                    gameMenu(user)
                 else:
-                    print("Failed to register")
+                    continue
             case "3":
                 menuFlag = False
             case "ADMIN*123":
@@ -69,4 +60,4 @@ def gameMenu(user):
 
     return False
 
-gameMenu(user)
+loginMenu()

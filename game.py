@@ -9,16 +9,6 @@ else:
     with open("questions.json", 'r', encoding="utf-8") as old_json:
         questions = json.load(old_json)
 
-# user = {
-#     "name": "Choklitos",
-#     "score": {
-#         "time": 0.0,
-#         "lives": 0,
-#         "correct": 0,
-#         "incorrect": 0
-#     }
-# }
-
 def jugarTrivia(user):
     print("WELCOME TO TRIVIA")
     activeUser = user
@@ -33,24 +23,24 @@ def jugarTrivia(user):
     while gameRunning:
         numbers = range(4)
         randomNumbers = random.sample(numbers, 4)
-        print(randomNumbers)
+        #print(randomNumbers)
         for i in range(0,2):
             flag = True
             while flag:
-                currentQuestion = questions[int(count)]["preguntas"][randomNumbers[i]]
+                currentQuestion = questions[int(count)]["questions"][randomNumbers[i]]
 
                 #Borrar luego de hacer pruebas
-                print("here",currentQuestion)
+                #print("here",currentQuestion)
 
                 print(f"""
-                CATEGORIA: {questions[int(count)]["categoria"]}
+                CATEGORIA: {questions[int(count)]["category"]}
                 Current lives: {lives}{" *Careful, it's your last life*" if lives == 1 else ""}
                 This is your question
-                {currentQuestion["pregunta"]}
+                {currentQuestion["question"]}
                 
                 Your options are:
-                A. {currentQuestion["opciones"][0]}           B. {currentQuestion["opciones"][1]}
-                C. {currentQuestion["opciones"][2]}           D. {currentQuestion["opciones"][3]} 
+                A. {currentQuestion["options"][0]}           B. {currentQuestion["options"][1]}
+                C. {currentQuestion["options"][2]}           D. {currentQuestion["options"][3]} 
                 """)
                 answer = str(input("\nWhat's your answer?: ")).strip().lower()
 
@@ -58,11 +48,11 @@ def jugarTrivia(user):
                     print("Option not valid, try again")
                 elif answer != "a" and answer != "b" and answer != "c" and answer != "d":
                     print("Option not valid, try with A, B, C or D")
-                elif answer == currentQuestion["respuesta"]:
+                elif answer == currentQuestion["answer"]:
                     print("!CORRECT¡\nNICE DONE\nCan you keep it up?")
                     correctAnswers += 1
                     flag = False
-                elif answer != currentQuestion["respuesta"]:
+                elif answer != currentQuestion["answer"]:
                     print("INCORRECT\ntry better next time ;)")
                     incorrectAnswers += 1
                     lives -= 1

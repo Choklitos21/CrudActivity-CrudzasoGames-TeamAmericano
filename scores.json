@@ -1,28 +1,11 @@
 [
     {
-        "name": "Choklitos",
+        "name": "diego",
+        "password": 1234,
         "score": {
-            "time": 120,
-            "lives": -1,
-            "correct": 0,
-            "incorrect": 4
-        }
-    },
-    {
-        "name": "Choklitos",
-        "score": {
-            "time": 60,
-            "lives": 3,
-            "correct": 10,
-            "incorrect": 0
-        }
-    },
-    {
-        "name": "Choklitos",
-        "score": {
-            "time": 180,
+            "time": 8.788450241088867,
             "lives": 0,
-            "correct": 0,
+            "correct": 1,
             "incorrect": 3
         }
     }

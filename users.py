@@ -37,7 +37,7 @@ def crearusuario():
 
         for user in data:
             print(user)
-            if user["usuario"] == usuario_ingresado:
+            if user["name"] == usuario_ingresado:
                 existe = True
                 break
         
@@ -64,15 +64,25 @@ def crearusuario():
             continue
 
         clave_ingresada = int(clave_ingresada)
+        break
+
+    data.append({
+        "name": usuario_ingresado,
+        "password": clave_ingresada,
+        "score": {}
+    })
+
+    with open("users.json", "w", encoding="utf-8") as new_json:
+        json.dump(data, new_json, indent=4)
 
 def iniciarsesion():
-
     val = True
     while (val):
 
         ingrese_usuario = input("Ingrese usuario: ")
         for nombre in data:
-            if ingrese_usuario == nombre["usuario"]:
+            if ingrese_usuario == nombre["name"]:
+                user = nombre
                 print("usuario encontrado")
                 val = False
                 break
@@ -83,14 +93,12 @@ def iniciarsesion():
     cal = 3
     acceso = False
     while (cal > 0):
-
         ingrese_contraseña = int(input("Ingrese contraseña: "))
-        for clave in data:
-            if ingrese_contraseña == clave["clave"]:
-                print("Contraseña valida")
-                cal = 0
-                acceso = True
-                break
+        if ingrese_contraseña == user["password"]:
+            print("Contraseña valida")
+            cal = 0
+            acceso = True
+            break
 
         cal -=1
 
@@ -98,12 +106,11 @@ def iniciarsesion():
             print("Contraseña incorrecta")
             
     if acceso:
-        return ingrese_usuario
+        return user
     
     else:
         print("Error, ya as intentado muchas veces")
         return False
-    
-iniciarsesion()
+
 
     
