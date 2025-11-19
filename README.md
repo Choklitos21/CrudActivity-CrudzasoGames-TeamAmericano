@@ -77,7 +77,7 @@ separate files.
 
 ## 4. Members of the project
 + Diego Alejandro Morales Montoya
-+ Anderson Guzman
-+ Edwin
-+ Toro
++ Anderson Fabian Guzman Ochoa
++ Edwar Jamison Rios Tobon
++ Andres Felipe Toro Graciano
 
