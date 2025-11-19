@@ -8,5 +8,15 @@
             "correct": 1,
             "incorrect": 3
         }
+    },
+    {
+        "name": "emmanuel",
+        "password": 1234,
+        "score": {
+            "time": 270.06025743484497,
+            "lives": 1,
+            "correct": 8,
+            "incorrect": 2
+        }
     }
 ]

@@ -3,5 +3,10 @@
         "name": "diego",
         "password": 1234,
         "score": {}
+    },
+    {
+        "name": "emmanuel",
+        "password": 1234,
+        "score": {}
     }
 ]
